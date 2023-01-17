@@ -43,6 +43,7 @@ const App = () => {
   const inputHandler = (e) => {
     if (e.key === "Enter") {
       findFromCity(document.getElementsByTagName('input')[0].value)
+      document.getElementsByTagName('input')[0].value = ""
     }
   }
 
